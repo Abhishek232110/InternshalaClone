@@ -4,7 +4,7 @@ import { IndexPage } from "../internProject";
 export const NavbarPage = () => {
   return (
     <>
-      <div className="flex shadow-sm p-3 ">
+      <div className="flex shadow-lg p-3 ">
         <div className="">
           <a href="">
             <img className="w-32    " src="internshala-1.jpg" alt="logo" />
