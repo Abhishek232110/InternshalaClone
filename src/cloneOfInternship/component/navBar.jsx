@@ -1,17 +1,17 @@
 import React from "react";
-import { IndexPage } from "../internProject";
+import { IndexPage } from "../../internProject";
 
 export const NavbarPage = () => {
   return (
     <>
-      <div className="flex shadow-sm p-3 ">
-        <div className="">
+      <div className="flex shadow-sm p-3 text-base">
+        <div className="pl-12">
           <a href="">
-            <img className="w-32    " src="internshala-1.jpg" alt="logo" />
+            <img className="w-28 " src="internshala-1.jpg" alt="logo" />
           </a>
         </div>
-        <div className="w-2/5"></div>
-        <div className="flex  space-x-9 pt-2">
+        <div className="w-2/5 "></div>
+        <div className="flex  space-x-12 pt-2">
           <div className="">
             <div className="">
               <a
@@ -68,7 +68,6 @@ export const NavbarPage = () => {
             </div>
           </div>
           <div className="">
-            {" "}
             <div className="">
               <a
                 className=" dropdown-toggle"

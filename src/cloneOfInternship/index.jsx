@@ -1,10 +1,12 @@
 import React from "react";
-import { NavbarPage } from "./navBar";
+import { NavbarPage } from "./component/navBar";
+import NamePages from "./component/namePage";
 
 export const Index = () => {
   return (
-    <div className="pl-2">
+    <div className="">
       <NavbarPage />
+      <NamePages />
     </div>
   );
 };
