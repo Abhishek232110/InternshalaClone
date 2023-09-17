@@ -1,11 +1,11 @@
 import React from "react";
-import ResponsiveAppBar from "./component/navBar";
+
 import NamePages from "./component/namePage";
 import DataBox from "./component/dataBox";
 import NavbarPage from "./component/navBar";
-// import SlidePage from "./slides/slidePage";
-import Data2 from "./component/data2";
-import CertificatePage from "./component/certificatePage";
+
+import CertificatePage from "./certificat/certificatePage";
+import PreferenceIntern from "./prefrenceIntern/preference";
 
 export default function Index() {
   return (
@@ -13,7 +13,7 @@ export default function Index() {
       <NavbarPage />
       <NamePages />
       <DataBox />
-      <Data2 />
+      <PreferenceIntern />
       <CertificatePage />
     </div>
   );
