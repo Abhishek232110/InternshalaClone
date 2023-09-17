@@ -42,7 +42,7 @@ export default function DataBox() {
             title1="Enroll now and get 55% + 10% OFF "
           />
         </div>
-        <div className="w-28"></div>
+        <div className="w-24"></div>
       </div>
     </>
   );
