@@ -1,7 +1,6 @@
 import React from "react";
-import { IndexPage } from "../../internProject";
 
-export const NavbarPage = () => {
+export default function NavbarPage() {
   return (
     <>
       <div className="flex shadow-sm p-3 text-base">
@@ -139,6 +138,7 @@ export const NavbarPage = () => {
           </a>
         </div>
       </div>
+      <div></div>
     </>
   );
-};
+}

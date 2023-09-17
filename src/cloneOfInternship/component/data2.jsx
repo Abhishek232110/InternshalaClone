@@ -1,27 +1,35 @@
-import { Card } from "@mui/material";
-import React from "react";
-
-export default function DataBox() {
+export default function Data2() {
   return (
     <>
-      <div className="flex">
-        <div className=" w-36"></div>
-        <div className="flex  overflow-x-scroll">
-          <SlideBar />
-          <SlideBar />
-          <SlideBar />
-          <SlideBar />
-          <SlideBar />
-          <SlideBar />
-          <SlideBar />
+      <div className="bg-green-50 ">
+        <div className="text-center my-20 pt-10">
+          <h1 className="text-3xl font-medium py-2">Internships</h1>
+          <h1>
+            as per your
+            <a href="" className="text-indigo-600 ">
+              refrence
+            </a>
+          </h1>
         </div>
-        <div className="w-32"></div>
+        <div className="flex pb-10">
+          <div className=" w-32"></div>
+          <div className="flex overflow-x-scroll">
+            <Slide1 />
+            <Slide1 />
+            <Slide1 />
+            <Slide1 />
+            <Slide1 />
+            <Slide1 />
+            <Slide1 />
+          </div>
+          <div className=" w-32"></div>
+        </div>
       </div>
     </>
   );
 }
 
-function SlideBar() {
+function Slide1() {
   return (
     <>
       <div className=" bg-indigo-500 mx-3 rounded-3xl mb-3 ">

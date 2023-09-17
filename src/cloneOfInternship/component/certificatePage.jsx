@@ -1,27 +1,24 @@
-import { Card } from "@mui/material";
-import React from "react";
-
-export default function DataBox() {
+export default function CertificatePage() {
   return (
     <>
-      <div className="flex">
-        <div className=" w-36"></div>
-        <div className="flex  overflow-x-scroll">
-          <SlideBar />
-          <SlideBar />
-          <SlideBar />
-          <SlideBar />
-          <SlideBar />
-          <SlideBar />
-          <SlideBar />
+      <h1 className="text-center text-3xl font-medium pt-5">
+        Cerification cources for you
+      </h1>
+      <div className="flex pt-5">
+        <div className="w-24"></div>
+        <div className="flex overflow-x-auto">
+          <DownPage />
+          <DownPage />
+          <DownPage />
+          <DownPage />
         </div>
-        <div className="w-32"></div>
+        <div className="w-24"></div>
       </div>
     </>
   );
 }
 
-function SlideBar() {
+function DownPage() {
   return (
     <>
       <div className=" bg-indigo-500 mx-3 rounded-3xl mb-3 ">

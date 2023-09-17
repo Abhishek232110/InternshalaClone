@@ -1,13 +1,10 @@
-import { ProfileEditor } from "./ReactJs/profileEditor";
-import { Index } from "./cloneOfInternship";
-import { SlidePage } from "./cloneOfInternship/slides/slidePage";
-import { IndexPage } from "./internProject";
+import AppRoutes from "./store/routers";
 
 function App() {
   return (
     <>
       <div className="">
-        <SlidePage />
+        <AppRoutes />
       </div>
     </>
   );

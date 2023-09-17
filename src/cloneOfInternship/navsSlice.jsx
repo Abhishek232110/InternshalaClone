@@ -1,29 +1,16 @@
-// import { createSlice } from "@reduxjs/toolkit";
-// initialState: {
-//   value: 0;
-// }
-
-// export function navSlice() {
-//   createSlice({
-//     name: "Abhisheks",
-//     initialState,
-//     reducers: {
-//       increment: (state) => {
-//         state.value += 1;
-//       },
-//       decrement: (state) => {
-//         state.value -= 1;
-//       },
-//     },
-//   });
-// }
-
-// export const { increment, decrement } = navSlice.actions;
-// export default navSlice.reducer;
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  value: 0,
+  name: "Abhishek",
+  lname: "kumar",
+  roll: 100,
+  id: 1,
+  address: {
+    vill: "Manikpur",
+    post: "Naubatpur",
+    dist: "Chandauli",
+    pin: 232110,
+  },
 };
 
 export const navSlice = createSlice({
