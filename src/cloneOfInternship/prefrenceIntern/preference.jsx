@@ -12,7 +12,7 @@ export default function PreferenceIntern() {
           </h1>
         </div>
         <div className="flex pb-10">
-          <div className=" w-40 bg-slate-500"></div>
+          <div className=" w-40"></div>
           <div className="flex overflow-x-scroll w-full mx-1">
             <Slide1
               hiring="Actively hiring"
@@ -27,7 +27,7 @@ export default function PreferenceIntern() {
             <Slide1 hiring="Actively hiring" imge="growth.png" />
             <Slide1 hiring="Actively hiring" imge="growth.png" />
           </div>
-          <div className=" w-40 bg-indigo-600"></div>
+          <div className=" w-40 "></div>
         </div>
       </div>
     </>
