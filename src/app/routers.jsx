@@ -1,6 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-
-import Index from "../cloneOfInternship";
+import Index from "../internProject";
 
 export default function AppRoutes() {
   return (

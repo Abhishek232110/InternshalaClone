@@ -1,11 +1,11 @@
 import React from "react";
-import { decrement, increment } from "../navsSlice";
-import { useDispatch, useSelector } from "react-redux";
+// import { decrement, increment } from "../navsSlice";
+// import { useDispatch, useSelector } from "react-redux";
 
 export const NamePages = () => {
-  const datas = useSelector((state) => state.navbarSlice.value);
-  console.log(datas);
-  const dispatch = useDispatch();
+  // const datas = useSelector((state) => state.navbarSlice.value);
+  // console.log(datas);
+  // const dispatch = useDispatch();
   return (
     <div className="text-center p-12">
       <span className="text-3xl font-semibold ">Hi, Abhishek!</span>
