@@ -12,8 +12,8 @@ export default function PreferenceIntern() {
           </h1>
         </div>
         <div className="flex pb-10">
-          <div className=" w-32"></div>
-          <div className="flex overflow-x-scroll">
+          <div className=" w-40 bg-slate-500"></div>
+          <div className="flex overflow-x-scroll w-full mx-1">
             <Slide1
               hiring="Actively hiring"
               imge="growth.png"
@@ -27,7 +27,7 @@ export default function PreferenceIntern() {
             <Slide1 hiring="Actively hiring" imge="growth.png" />
             <Slide1 hiring="Actively hiring" imge="growth.png" />
           </div>
-          <div className=" w-32"></div>
+          <div className=" w-40 bg-indigo-600"></div>
         </div>
       </div>
     </>
@@ -37,8 +37,8 @@ export default function PreferenceIntern() {
 function Slide1(props) {
   return (
     <>
-      <div className="bg-white mx-2  rounded-md  mb-3 ">
-        <button className=" w-96 px-4 mt-3 ">
+      <div className="bg-white mx-2 h-96 rounded-md  mb-3 ">
+        <button className="  px-4 mt-3 ">
           <div className="flex rounded-sm border w-fit">
             <img src={props.imge} className=" w-5 h-5 " />
             <h1 className="px-2">{props.hiring}</h1>
