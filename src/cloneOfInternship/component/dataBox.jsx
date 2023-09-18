@@ -51,7 +51,7 @@ export default function DataBox() {
 function SlideBar(props) {
   return (
     <>
-      <div className=" bg-indigo-500 mx-2 rounded-3xl mb-3 ">
+      <div className=" bg-gradient-to-br from-blue-700 to-blue-400 mx-2 rounded-3xl mb-3 ">
         <button className=" w-96 pl-6  ">
           <h1 className=" rounded-md border pl-2 pr-6 pt-1 pb-1 mt-3 w-fit text-white  font-mono">
             {props.name}

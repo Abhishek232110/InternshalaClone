@@ -5,15 +5,15 @@ import DataBox from "./component/dataBox";
 import NavbarPage from "./component/navBar";
 
 import CertificatePage from "./certificat/certificatePage";
-import PreferenceIntern from "./prefrenceIntern/preference";
+import PreferenceIndex from "./prefrenceIntern";
 
 export default function Index() {
   return (
-    <div className="">
+    <div>
       <NavbarPage />
       <NamePages />
       <DataBox />
-      <PreferenceIntern />
+      <PreferenceIndex />
       <CertificatePage />
     </div>
   );
