@@ -5,7 +5,8 @@ import DataBox from "./component/dataBox";
 import NavbarPage from "./component/navBar";
 
 import CertificatePage from "./certificat/certificatePage";
-import PreferenceIntern from "./prefrenceIntern/preference";
+
+import PreferenceIndex from "./prefrenceIntern";
 
 export default function Index() {
   return (
@@ -13,7 +14,7 @@ export default function Index() {
       <NavbarPage />
       <NamePages />
       <DataBox />
-      <PreferenceIntern />
+      <PreferenceIndex />
       <CertificatePage />
     </div>
   );
