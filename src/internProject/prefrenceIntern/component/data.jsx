@@ -1,4 +1,4 @@
-export const PreferenceData = [
+const PreferenceData = [
   {
     logo: "Actively hiring",
     imge: "growth.png",
@@ -8,7 +8,7 @@ export const PreferenceData = [
     location: "Work From Home",
     moneyLogo: "",
     sallary: "19,000-21,000 /month",
-    monthLogo: "",
+    monthLogo: "kjnlkjlkjkj",
     month: " 7 Months",
   },
   {
@@ -84,3 +84,5 @@ export const PreferenceData = [
     month: " 4 Months",
   },
 ];
+
+export default PreferenceData;

@@ -8,8 +8,9 @@ import {
   TimeToLeave,
   ViewDay,
 } from "@mui/icons-material";
-import { PreferenceData } from "./data";
+import PreferenceData from "./data";
 import Icon from "@mui/material/Icon";
+import { Link } from "react-router-dom";
 export default function Preference() {
   const data = PreferenceData;
 
@@ -19,8 +20,8 @@ export default function Preference() {
         {data.map((res) => {
           return (
             <div className="  float-left ">
-              <a href="" className=" hover:text-black">
-                <div className="  mx-1 border rounded-lg my-1 text-sm bg-white  w-72 p-3 ">
+              <a href="">
+                <div className="text-black  mx-1 border rounded-lg my-1 text-sm bg-white  w-72 p-3 ">
                   <div className="flex rounded-sm border w-fit ">
                     <img src={res.imge} className=" w-5 h-4 " />
                     <h1 className="px-2 text-center">{res.logo}</h1>
@@ -38,14 +39,17 @@ export default function Preference() {
                   </div>
                   <div className="flex py-2">
                     <i class="bi bi-calendar4"></i>
-                    <p className="pl-3">{res.month}</p>
+                    <p className="pl-4">{res.month}</p>
                   </div>
                   <br />
                   <br />
                   <br />
-                  <a href="" className="text-indigo-600 ">
-                    View Details {">"}
-                  </a>
+                  <br />
+                  <Link to="linkPage" className=" ">
+                    <button className="bg-indigo-400 p-2 rounded-sm hover:text-white">
+                      View Details {">"}
+                    </button>
+                  </Link>
                 </div>
               </a>
             </div>

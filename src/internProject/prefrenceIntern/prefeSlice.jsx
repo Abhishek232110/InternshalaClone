@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { PreferenceData } from "./component/data";
+import PreferenceData from "./component/data";
 
 const initialState = {
   data: PreferenceData,

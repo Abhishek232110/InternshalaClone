@@ -3,7 +3,7 @@ import Preference from "./component/preference";
 export default function PreferenceIndex() {
   return (
     <>
-      <div className="bg-green-100">
+      <div className="bg-green-100 ">
         <h1 className="text-center mt-10  text-3xl  font-semibold pt-5">
           Internship
         </h1>
