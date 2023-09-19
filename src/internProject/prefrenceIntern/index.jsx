@@ -1,4 +1,4 @@
-import Preference from "./preference";
+import Preference from "./component/preference";
 
 export default function PreferenceIndex() {
   return (

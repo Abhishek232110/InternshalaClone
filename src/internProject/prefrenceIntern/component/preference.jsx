@@ -9,7 +9,6 @@ export default function Preference() {
           return (
             <div className="  float-left ">
               <a href="" className=" hover:text-black">
-                {" "}
                 <div className="  mx-1 border rounded-lg my-1 text-sms bg-white  w-72 p-3 ">
                   <div className="flex rounded-sm border w-fit ">
                     <img src={res.imge} className=" w-5 h-4 " />
