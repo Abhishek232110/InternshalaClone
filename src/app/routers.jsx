@@ -1,11 +1,9 @@
 import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
 import Index from "../internProject";
 import DetailsPage from "../internProject/detailPage/detailsPage";
-import DataBox from "../internProject/component/dataBox";
-import NamePages from "../internProject/component/namePage";
-import CertificatePage from "../internProject/certificat/certificatePage";
 import PreferenceIndex from "../internProject/prefrenceIntern";
-
+import NamePages from "../internProject/component/components/namePage";
+import CertificatePage from "../internProject/certificat/certificatePage";
 export default function AppRoutes() {
   return (
     <>
