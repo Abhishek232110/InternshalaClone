@@ -22,6 +22,7 @@ export default function Index() {
   }, []);
   return (
     <div className="">
+      <NavbarIndex />
       <NamePages />
       <Link to="/dataBox">
         <DataboxIndex />
