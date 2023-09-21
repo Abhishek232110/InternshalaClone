@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import CertificatePage from "./certificatePage";
 
 export default function CertificateIndex() {

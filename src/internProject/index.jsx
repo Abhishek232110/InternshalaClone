@@ -1,16 +1,16 @@
 import { Link } from "react-router-dom";
-import NavbarPage from "./component/components/navBar";
 import NamePages from "./component/components/namePage";
 
 import PreferenceIndex from "./prefrenceIntern";
-import CertificatePage from "./certificat/certificatePage";
-import DetailsPage from "./detailPage/detailsPage";
+
 import DataBox from "./component/components/dataBox";
 import DataboxIndex from "./component";
 
 import { useEffect, useState } from "react";
-import LoginPage from "./userPage/component/loginPage";
+
 import CertificateIndex from "./certificat";
+
+import NavbarIndex from "./navbarPage";
 
 export default function Index() {
   const [open, setOpen] = useState(false);
@@ -22,15 +22,15 @@ export default function Index() {
   }, []);
   return (
     <div className="">
-      <NavbarPage open={true} />
-      {/* <LoginPage /> */}
       <NamePages />
-      <Link to="/DataBox">
+      <Link to="/dataBox">
         <DataboxIndex />
       </Link>
-      <PreferenceIndex />
+      <Link to="/prefrenceIndex">
+        <PreferenceIndex />
+      </Link>
 
-      <Link to="/certificateIndex ">
+      <Link to="databox">
         <CertificateIndex />
       </Link>
     </div>

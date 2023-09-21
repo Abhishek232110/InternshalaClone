@@ -36,7 +36,7 @@ export default function CertificatePage() {
                     </div>
                     <br />
                     <br />
-                    <Link to="linkPage" className=" ">
+                    <Link to="databox" className=" ">
                       <button className="bg-indigo-400 p-2 rounded-sm hover:text-white">
                         View Details {">"}
                       </button>
