@@ -10,7 +10,7 @@ export default function DataBox() {
         {storeData.map((post) => {
           return (
             <>
-              <div className=" bg-gradient-to-br from-sky-900 to-blue-400 mx-1 rounded-3xl mb-3 float-left">
+              <div className=" bg-gradient-to-br from-sky-900 to-blue-400 mx-2 rounded-3xl mb-3 float-left">
                 <button className=" w-96  px-6 text-white font-sans text-left  ">
                   <h1 className=" rounded-md border pl-2 pr-6 pt-1 pb-1 mt-3 w-fit ">
                     {post.name}
