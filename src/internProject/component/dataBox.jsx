@@ -34,13 +34,6 @@ export default function DataBox() {
             title="Experience the power of NSDC and Skill India - approved certifications"
             title1="Enroll now and get 55% + 10% OFF "
           />
-          <SlideBar
-            name="INTERNSHALA TRAININGS"
-            img="laptopWork.jpg"
-            button="Know more"
-            title="Experience the power of NSDC and Skill India - approved certifications"
-            title1="Enroll now and get 55% + 10% OFF "
-          />
         </div>
         <div className="w-24"></div>
       </div>
