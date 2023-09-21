@@ -4,9 +4,7 @@ import UserIndex from "./internProject/userPage";
 function App() {
   return (
     <>
-      <div className="">
-        <UserIndex />
-      </div>
+      <AppRoutes />
     </>
   );
 }
