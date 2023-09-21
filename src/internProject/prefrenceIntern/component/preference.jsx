@@ -21,7 +21,7 @@ export default function Preference() {
           return (
             <div className="  float-left ">
               <a href="">
-                <div className="text-black  mx-1 border rounded-lg my-1 text-sm bg-white  w-72 p-3 ">
+                <div className="text-black  mx-1 border rounded-lg my-1 text-sm  font-light  bg-white  w-72 p-3 ">
                   <div className="flex rounded-sm border w-fit ">
                     <img src={res.imge} className=" w-5 h-4 " />
                     <h1 className="px-2 text-center">{res.logo}</h1>
@@ -43,8 +43,7 @@ export default function Preference() {
                   </div>
                   <br />
                   <br />
-                  <br />
-                  <br />
+
                   <Link to="linkPage" className=" ">
                     <button className="bg-indigo-400 p-2 rounded-sm hover:text-white">
                       View Details {">"}

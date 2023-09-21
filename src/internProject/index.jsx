@@ -8,18 +8,30 @@ import DetailsPage from "./detailPage/detailsPage";
 import DataBox from "./component/components/dataBox";
 import DataboxIndex from "./component";
 
+import { useEffect, useState } from "react";
+import LoginPage from "./userPage/component/loginPage";
+import CertificateIndex from "./certificat";
+
 export default function Index() {
+  const [open, setOpen] = useState(false);
+  let emailId;
+  useEffect(() => {
+    if ("abhi@gmail.com") {
+      setOpen(<DataBox />);
+    }
+  }, []);
   return (
     <div className="">
-      <NavbarPage />
+      <NavbarPage open={true} />
+      {/* <LoginPage /> */}
       <NamePages />
       <Link to="/DataBox">
         <DataboxIndex />
       </Link>
       <PreferenceIndex />
 
-      <Link to="/certificatePage ">
-        <CertificatePage />
+      <Link to="/certificateIndex ">
+        <CertificateIndex />
       </Link>
     </div>
   );

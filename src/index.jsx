@@ -8,7 +8,7 @@ import "./index.css";
 import { Store } from "./app/store";
 import App from "./App.jsx";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+ReactDOM.createRoot(document.getElementById("roots")).render(
   // <React.StrictMode>
   <Provider store={Store}>
     <BrowserRouter>

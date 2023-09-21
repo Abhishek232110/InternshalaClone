@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 
 export default function DataBox() {
   const storeData = useSelector((state) => state.boxSlice.PageData);
-  console.log(storeData);
+
   return (
     <>
       <div className="flex">
