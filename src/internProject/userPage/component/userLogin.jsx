@@ -6,9 +6,7 @@ export default function UserLogin() {
         <div> </div>
         <div className="   ">
           <h1 className="text-2xl font-medium text-center py-10 ">
-            <Link to="databox">
-              <button>Login Page </button>
-            </Link>
+            <button>Login Page </button>
           </h1>
           <form className="space-y-10" action="#" method="POST">
             <div>

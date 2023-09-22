@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 import CertificateIndex from "./certificat";
 
 import NavbarIndex from "./navbarPage";
+import PlacmentCourcesPage from "./placementCourses";
 
 export default function Index() {
   const [open, setOpen] = useState(false);
@@ -34,6 +35,7 @@ export default function Index() {
       <Link to="databox">
         <CertificateIndex />
       </Link>
+      <PlacmentCourcesPage />
     </div>
   );
 }
