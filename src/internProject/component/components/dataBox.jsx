@@ -1,9 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import { useSelector } from "react-redux";
+import Datas from "./api";
 
 export default function DataBox() {
   const storeData = useSelector((state) => state.boxSlice.PageData);
+  // const [next, setNext] = useState(0);
+  // const [show, setShow] = useState(false);
+  // const data = Datas[next];
+  // let hasNext = next < Datas.length - 1;
+  // let hasPrev = next > 0;
+  // const nextItem = () => {
+  //   {
+  //     if (hasNext) {
+  //       setNext(next + 1);
+  //     }
+  //   }
+  // };
+  // const preItem = () => {
+  //   if (hasPrev) {
+  //     setNext(next - 1);
+  //   }
+  // };
 
+  // const showMore = () => {
+  //   setShow(!show);
+  // };
   return (
     <>
       <div className="flex">
@@ -36,6 +57,35 @@ export default function DataBox() {
           );
         })}
       </div>
+      {/* <div>
+        <button
+          onClick={nextItem}
+          className="bg-indigo-400 px-3  py-2 rounded-md"
+        >
+          Next
+        </button>
+        <button
+          onClick={preItem}
+          className="bg-indigo-400 px-3  py-2 rounded-md"
+        >
+          Previus
+        </button>
+        <div>
+          <p>{data.name}</p>
+          <p>
+            {next + 1} of{Datas.length}
+          </p>
+          <p></p>
+          <button
+            className="bg-indigo-400 px-3  py-2 rounded-md"
+            onClick={showMore}
+          >
+            {show ? "hide" : "show"}detail
+          </button>
+          <p>{show && <p>{data.title1}</p>}</p>
+          <p>{show && <img src="com.png"></img>}</p>
+        </div>
+      </div> */}
     </>
   );
 }

@@ -24,9 +24,9 @@ export default function Index() {
     <div className="">
       <NavbarIndex />
       <NamePages />
-      <Link to="/dataBox">
-        <DataboxIndex />
-      </Link>
+
+      <DataboxIndex />
+
       <Link to="/prefrenceIndex">
         <PreferenceIndex />
       </Link>

@@ -21,7 +21,6 @@ export default function AppRoutes() {
         <Route path="NamePage" element={<NamePages />} />
         <Route path="prefrenceIndex" element={<PreferenceIndex />}></Route>
         <Route path="CertificateIndex" element={<CertificateIndex />} />
-        <Route path="userMessage" element={<UserMessage />}></Route>
       </Routes>
     </>
   );
