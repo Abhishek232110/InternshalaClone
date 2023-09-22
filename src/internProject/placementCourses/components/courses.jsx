@@ -7,7 +7,7 @@ export function Courses() {
     dots: true,
     infinite: true,
     speed: 1000,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 2,
     swipeToSlide: true,
   };
