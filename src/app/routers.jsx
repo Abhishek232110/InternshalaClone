@@ -7,12 +7,16 @@ import CertificatePage from "../internProject/certificat/certificatePage";
 import NavbarPage from "../internProject/component/components/navBar";
 import CertificateIndex from "../internProject/certificat";
 import UserMessage from "../internProject/userPage/component/userMessage";
+import LoginPage from "../internProject/userPage/component/loginPage";
+import PlacmentCourcesPage from "../internProject/placementCourses";
 export default function AppRoutes() {
   return (
     <>
       <Routes>
         <Route path="/" element={<Index />}></Route>
         <Route path="NavbarPage" element={<NavbarPage />}></Route>
+        <Route path="login" element={<LoginPage />}></Route>
+        <Route path="placement" element={<PlacmentCourcesPage />}></Route>
         <Route path="detail" element={<DetailsPage />}></Route>
         <Route path="Databox" element={<PreferenceIndex />} />
         <Route path="NamePage" element={<NamePages />} />
