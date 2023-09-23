@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import fullStackImage from "../../assets/Full_Stack.png";
-import DsImage from "../../assets/data-science.jpg";
+import DsImage from "../../assets/ds.jpeg";
 import hrmImage from "../../assets/hrm.jpeg";
 import bdcImage from "../../assets/bdc.jpeg";
 import dmcImage from "../../assets/dmc.jpeg";
@@ -23,28 +23,28 @@ const initialState = {
     {
       id: 2,
       image: DsImage,
-      course: "Full Stack Develeopment Course",
-      duration: "6 month course",
+      course: "Data Science Course",
+      duration: "4 month course",
       gaurantee: "Course with gaurantee internship",
-      salary: "Highest stipned offered Rs 1.1 Lac/month",
-      internship: "1.08 Lac+job/internship oppertunities",
+      salary: "Highest stipned offered Rs 50k/month",
+      internship: "45,500/internship oppertunities",
       buttontext: "Know more >",
     },
     {
       id: 3,
       image: hrmImage,
-      course: "Full Stack Develeopment Course",
-      duration: "6 month course",
+      course: "Human Resource Management Course",
+      duration: "4 month course",
       gaurantee: "Course with gaurantee internship",
-      salary: "Highest stipned offered Rs 1.1 Lac/month",
-      internship: "1.08 Lac+job/internship oppertunities",
+      salary: "Highest stipned offered Rs 12+ LPA/month",
+      internship: "2.91 Lac+job/internship oppertunities",
       buttontext: "Know more >",
     },
     {
       id: 4,
       image: bdcImage,
-      course: "Full Stack Develeopment Course",
-      duration: "6 month course",
+      course: "Business Development Course   ",
+      duration: "4 month course",
       gaurantee: "Course with gaurantee internship",
       salary: "Highest stipned offered Rs 1.1 Lac/month",
       internship: "1.08 Lac+job/internship oppertunities",
@@ -53,7 +53,7 @@ const initialState = {
     {
       id: 5,
       image: dmcImage,
-      course: "Full Stack Develeopment Course",
+      course: "Digital Marketing Course",
       duration: "6 month course",
       gaurantee: "Course with gaurantee internship",
       salary: "Highest stipned offered Rs 1.1 Lac/month",
@@ -63,7 +63,7 @@ const initialState = {
     {
       id: 6,
       image: eviImage,
-      course: "Full Stack Develeopment Course",
+      course: "Electrical Vechile Industry Course",
       duration: "6 month course",
       gaurantee: "Course with gaurantee internship",
       salary: "Highest stipned offered Rs 1.1 Lac/month",
@@ -73,7 +73,7 @@ const initialState = {
     {
       id: 7,
       image: pmcImage,
-      course: "Full Stack Develeopment Course",
+      course: "Product Management Course",
       duration: "6 month course",
       gaurantee: "Course with gaurantee internship",
       salary: "Highest stipned offered Rs 1.1 Lac/month",
@@ -83,7 +83,7 @@ const initialState = {
     {
       id: 8,
       image: uiImage,
-      course: "Full Stack Develeopment Course",
+      course: "Ui/Ux Design Course",
       duration: "6 month course",
       gaurantee: "Course with gaurantee internship",
       salary: "Highest stipned offered Rs 1.1 Lac/month",

@@ -11,7 +11,9 @@ export function Courses() {
     infinite: true,
     speed: 1000,
     slidesToShow: 4,
-    slidesToScroll: 2,
+    slidesToScroll: 4,
+    autoplay: true,
+    autoplaySpeed: 2000,
     swipeToSlide: true,
   };
   return (
