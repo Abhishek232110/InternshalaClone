@@ -36,6 +36,7 @@ export default function Index() {
         <CertificateIndex />
       </Link>
       <PlacmentCourcesPage />
+      <h1>sajdnskjand</h1>
     </div>
   );
 }
