@@ -11,7 +11,7 @@ export function CourseCard({ data }) {
   } = data;
   return (
     <>
-      <div className="flex m-5 w-64" key={id}>
+      <div className="flex m-5 w-64 rounded-md" key={id}>
         <div className="  bg-white mx-1  mb-3 float-left ">
           <img src={image} className="h-40 w-full" />
           <div className="p-2">

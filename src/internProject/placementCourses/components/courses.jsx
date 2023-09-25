@@ -18,7 +18,7 @@ export function Courses() {
   };
   return (
     <>
-      <Slider {...settings} className="m-10 cursor-pointer">
+      <Slider {...settings} className="m-10 cursor-pointer ">
         {course.map((data) => {
           return <CourseCard data={data} />;
         })}
