@@ -13,6 +13,8 @@ export function Link({ d }) {
   );
 }
 const FooterPage = () => {
+  const d = new Date();
+  let year = d.getFullYear();
   // Define the data for the footer
 
   const data = [
@@ -89,7 +91,7 @@ const FooterPage = () => {
         </div>
         <hr className="my-5" />
         <div className="flex justify-end py-5">
-          &copy; 2023 Your Company. All rights reserved.
+          &copy; {year} Your Company. All rights reserved.
         </div>
       </footer>
     </>
