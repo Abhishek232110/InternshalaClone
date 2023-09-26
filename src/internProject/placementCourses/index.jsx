@@ -1,9 +1,9 @@
 import React from "react";
 import { Header } from "./components/header";
 import { Courses } from "./components/courses";
+import App from "../../App";
 
 import { ContinueWithGoogle } from "./components/continueWithGoogle";
-import Footer from "../../common";
 
 const PlacmentCourcesPage = () => {
   return (
@@ -11,7 +11,7 @@ const PlacmentCourcesPage = () => {
       <Header />
       <Courses />
       <ContinueWithGoogle />
-      <Footer />
+
       <App />
     </div>
   );
