@@ -3,12 +3,12 @@ import Index from "../internProject";
 import DetailsPage from "../internProject/detailPage/detailsPage";
 import PreferenceIndex from "../internProject/prefrenceIntern";
 import NamePages from "../internProject/component/components/namePage";
-import CertificatePage from "../internProject/certificat/certificatePage";
+// import CertificatePage from "../internProject/certificat/certificatePage";
 import CertificateIndex from "../internProject/certificat";
-import UserMessage from "../internProject/userPage/component/userMessage";
 import UserIndex from "../internProject/userPage";
 import NavbarIndex from "../internProject/navbarPage";
 import RegisterPage from "../internProject/userPage/component/registerForm";
+import userMessage from "../internProject/message/component/userMessage";
 
 export default function AppRoutes() {
   return (
@@ -23,6 +23,7 @@ export default function AppRoutes() {
         <Route path="NamePage" element={<NamePages />} />
         <Route path="prefrenceIndex" element={<PreferenceIndex />}></Route>
         <Route path="CertificateIndex" element={<CertificateIndex />} />
+        <Route path="userMessage" element={<userMessage />}></Route>
       </Routes>
     </>
   );

@@ -12,7 +12,6 @@ const PlacmentCourcesPage = () => {
       <Courses />
       <ContinueWithGoogle />
       <Footer />
-      <App />
     </div>
   );
 };
