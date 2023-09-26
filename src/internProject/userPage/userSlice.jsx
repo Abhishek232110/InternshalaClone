@@ -11,7 +11,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 export const getAllUser = createAsyncThunk(
   "getUsersData",
   async (args, { rejectWithValue }) => {
-    const response = await fetch("");
+    const response = await fetch("http://localhost:4001/login");
     try {
       const results = response.json();
       return results;
