@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllUser } from "../userSlice";
+import { Link } from "react-router-dom";
 
 export default function UserLogin({ onClickRegister, onClickLogin }) {
   const [form, setForm] = useState();
@@ -107,7 +108,12 @@ export default function UserLogin({ onClickRegister, onClickLogin }) {
             SignUp
           </button>
         </p>
-        <button onClick={() => dispatch(getAllUser())}>AllUser</button>
+        {/* <button onClick={() => dispatch(getAllUser())}>AllUser</button> */}
+        <Link to="index">
+          <button className=" w-full text-center bg-violet-500 py-1 rounded-md mt-5">
+            Go To HomePage
+          </button>
+        </Link>
       </div>
     </>
   );

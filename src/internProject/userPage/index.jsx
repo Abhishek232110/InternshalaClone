@@ -13,7 +13,7 @@ export default function UserIndex() {
   return (
     <>
       <div className="flex ">
-        <div className="w-1/2 flex-1 flex justify-center  bg-slate-400 ">
+        <div className="w-1/2 flex-1 flex justify-center  bg-zinc-100 ">
           {register ? (
             <RegisterPage
               onClickLogin={() => {
