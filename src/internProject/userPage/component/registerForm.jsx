@@ -1,26 +1,22 @@
-import { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { getAllUser } from "../userSlice";
+import { useState } from "react";
 
-export default function UserLogin({ onClickRegister, onClickLogin }) {
+export default function RegisterPage({ onClickLogin, onClickRegister }) {
   const [form, setForm] = useState();
 
-  const select = useSelector((state) => state.app.users);
-
-  const dispatch = useDispatch();
-  const submitHandle = async (e) => {
+  const submitHandle = (e) => {
     e.preventDefault();
-    onClickLogin(e);
-    const response = await fetch("http://localhost:8000/", {
-      method: "POST",
-      body: JSON.stringify(form),
-      headers: {
-        // Authorization: "Bearer YOUR_TOKEN",
-        "Content-Type": "application/json",
-      },
-    });
+    onClickRegister(e);
+    // const response = await fetch("http://localhost:8000/", {
+    //   method: "POST",
+    //   body: JSON.stringify(form),
+    //   headers: {
+    //     Authorization: "Bearer YOUR_TOKEN",
+    //     "Content-Type": "application/json",
+    //   },
+    // });
 
-    const data = await response.json();
+    // const data = await response.json();
+    // return data;
   };
 
   const eventHandler = (e) => {
@@ -30,14 +26,20 @@ export default function UserLogin({ onClickRegister, onClickLogin }) {
     });
   };
 
+  const mystyle = {
+    // backgroundColor: "",
+    padding: "20px",
+    fontFamily: "Arial",
+    image: "laptopWork.jpg",
+  };
   return (
     <>
       <div className="   ">
         <h1 className="text-2xl font-medium text-center py-10 ">
-          <button>Login Page </button>
+          <span>SignUp Here </span>
         </h1>
         <form
-          className="space-y-10"
+          className="space-y-7"
           action="#"
           method="POST"
           onSubmit={submitHandle}
@@ -47,19 +49,34 @@ export default function UserLogin({ onClickRegister, onClickLogin }) {
               htmlFor="email"
               className="block text-sm font-medium leading-6 text-gray-900"
             >
+              Name
+            </label>
+            <input
+              onChange={eventHandler}
+              name="username"
+              type="text"
+              autoComplete="username"
+              required
+              className="rounded-md  w-72  py-1 outline-none pl-2 shadow-sm mt-2"
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium leading-6 text-gray-900"
+            >
               Email address
             </label>
-            <div className="mt-2">
-              <input
-                onChange={eventHandler}
-                name="username"
-                type="email"
-                autoComplete="email"
-                required
-                className="rounded-md w-72 py-1 outline-none pl-2 shadow-sm"
-              />
-            </div>
+            <input
+              onChange={eventHandler}
+              name="useremail"
+              type="email"
+              autoComplete="email"
+              required
+              className="rounded-md w-72 py-1 outline-none pl-2 shadow-sm mt-2"
+            />
           </div>
+
           <div>
             <div className="flex items-center justify-between">
               <label
@@ -68,14 +85,6 @@ export default function UserLogin({ onClickRegister, onClickLogin }) {
               >
                 Password
               </label>
-              <div className="text-sm">
-                <a
-                  href="#"
-                  className="font-semibold text-indigo-600 hover:text-indigo-500"
-                >
-                  Forgot password?
-                </a>
-              </div>
             </div>
             <div className="mt-2">
               <input
@@ -90,24 +99,24 @@ export default function UserLogin({ onClickRegister, onClickLogin }) {
           </div>
           <div>
             <button
-              onSubmit={submitHandle}
+              onSubmit={() => {}}
               type="submit"
               className=" p-1  rounded-md w-full bg-indigo-400 hover:bg-indigo-500"
             >
-              Sign in
+              submit
             </button>
           </div>
         </form>
-        <p className="mt-10 text-center text-sm text-gray-500">
-          Not a member?
+        <p className="mt-4 text-center text-sm text-gray-500">
+          You are a member?
           <button
             className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500 pl-2"
-            onClick={onClickRegister}
+            onClick={onClickLogin}
           >
             SignUp
           </button>
         </p>
-        <button onClick={() => dispatch(getAllUser())}>AllUser</button>
+        {/* <button onClick={() => dispatch(getAllUser())}>AllUser</button> */}
       </div>
     </>
   );

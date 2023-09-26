@@ -4,9 +4,13 @@ import { Courses } from "./components/courses";
 
 const PlacmentCourcesPage = () => {
   return (
-    <div className="bg-blue-50">
-      <Header />
-      <Courses />
+    <div className="my-10">
+      <div className="bg-blue-50">
+        <Header />
+        <div>
+          <Courses />
+        </div>
+      </div>
     </div>
   );
 };

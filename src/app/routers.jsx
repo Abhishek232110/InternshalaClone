@@ -8,12 +8,14 @@ import CertificateIndex from "../internProject/certificat";
 import UserMessage from "../internProject/userPage/component/userMessage";
 import UserIndex from "../internProject/userPage";
 import NavbarIndex from "../internProject/navbarPage";
+import RegisterPage from "../internProject/userPage/component/registerForm";
 
 export default function AppRoutes() {
   return (
     <>
       <Routes>
         <Route path="/" element={<UserIndex />}></Route>
+        <Route path="/" element={<RegisterPage />}></Route>
         <Route path="index" element={<Index />}></Route>
         <Route path="NavbarPage" element={<NavbarIndex />}></Route>
         <Route path="detail" element={<DetailsPage />}></Route>

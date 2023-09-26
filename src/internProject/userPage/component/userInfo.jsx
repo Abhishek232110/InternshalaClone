@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 
 export default function UserInformation() {
   let [isOpen, setIsOpen] = useState(false);
-  const userData = useSelector((state) => state.userSlice.userData);
+  // const userData = useSelector((state) => state.userSlice.userData);
 
   function closeModal() {
     setIsOpen(false);

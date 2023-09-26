@@ -1,22 +1,61 @@
-import { createSlice } from "@reduxjs/toolkit";
-import UserDetails from "./component/userDetails";
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+// import UserDetails from "./component/userDetails";
 
-const initialState = {
-  userData: UserDetails,
-};
+// const initialState = {
+//   // userData: UserDetails,
+//   loginUser: [],
+//   loading: false,
+//   error: null,
+// };
 
-const UserSlice = createSlice({
-  name: "Abhishek",
-  initialState,
-  reducers: {
-    Add: (state) => {
-      state.value += 1;
+export const getAllUser = createAsyncThunk(
+  "getUsersData",
+  async (args, { rejectWithValue }) => {
+    const response = await fetch("http://localhost:8000/");
+    try {
+      const results = response.json();
+      return results;
+    } catch (error) {
+      return rejectWithValue("You find error");
+    }
+  }
+);
+
+export const sendAllUser = createAsyncThunk(
+  "sendUsersData",
+  async (args, { rejectWithValue }) => {
+    const response = await fetch("http://localhost:8000/", {
+      method: "POST",
+      body: JSON.stringify(form),
+      headers: {
+        Authorization: "Bearer YOUR_TOKEN",
+        "Content-Type": "application/json",
+      },
+    });
+  }
+);
+
+export const gitUser = createSlice({
+  name: "gitUser",
+  initialState: {
+    users: [],
+    loading: false,
+    error: null,
+  },
+  reducers: {},
+  extraReducers: {
+    [getAllUser.pending]: (state) => {
+      state.loading = true;
     },
-    Substract: (state) => {
-      state.value -= 1;
+    [getAllUser.fulfilled]: (state, actions) => {
+      state.loading = false;
+      state.users = actions.payload;
+    },
+    [getAllUser.rejected]: (state, actions) => {
+      state.loading = false;
+      state.error = actions.payload;
     },
   },
 });
 
-export const { Add, Substract } = UserSlice.actions;
-export default UserSlice.reducer;
+export default gitUser.reducer;

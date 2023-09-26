@@ -15,12 +15,12 @@ import PlacmentCourcesPage from "./placementCourses";
 
 export default function Index() {
   const [open, setOpen] = useState(false);
-  let emailId;
-  useEffect(() => {
-    if ("abhi@gmail.com") {
-      setOpen(<DataBox />);
-    }
-  }, []);
+  // let emailId;
+  // useEffect(() => {
+  //   if ("abhi@gmail.com") {
+  //     setOpen(<DataBox />);
+  //   }
+  // }, []);
   return (
     <div className="">
       <NavbarIndex />
@@ -36,7 +36,6 @@ export default function Index() {
         <CertificateIndex />
       </Link>
       <PlacmentCourcesPage />
-      <h1>sajdnskjand</h1>
     </div>
   );
 }

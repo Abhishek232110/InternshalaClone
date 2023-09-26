@@ -7,13 +7,13 @@ export function Courses() {
     dots: true,
     infinite: true,
     speed: 1000,
-    slidesToShow: 4,
-    slidesToScroll: 2,
+    slidesToShow: 3,
+    slidesToScroll: 1,
     swipeToSlide: true,
   };
   return (
     <>
-      <Slider {...settings} className="p-3">
+      <Slider {...settings} className="mx-12">
         <div className="flex m-5">
           <div className="  bg-white mx-1 rounded-3xl mb-3 float-left p-4">
             <img src={fullStackImage} className="h-48 w-full" />
