@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import NamePages from "./component/components/namePage";
+import PlacmentCoursePage from "../internProject/placementCourses/index";
 
 import PreferenceIndex from "./prefrenceIntern";
 
@@ -9,18 +10,11 @@ import DataboxIndex from "./component";
 import { useEffect, useState } from "react";
 
 import CertificateIndex from "./certificat";
-
 import NavbarIndex from "./navbarPage";
-import PlacmentCourcesPage from "./placementCourses";
 
 export default function Index() {
   const [open, setOpen] = useState(false);
-  // let emailId;
-  // useEffect(() => {
-  //   if ("abhi@gmail.com") {
-  //     setOpen(<DataBox />);
-  //   }
-  // }, []);
+
   return (
     <div className="">
       <NavbarIndex />
@@ -35,7 +29,7 @@ export default function Index() {
       <Link to="databox">
         <CertificateIndex />
       </Link>
-      <PlacmentCourcesPage />
+      <PlacmentCoursePage />
     </div>
   );
 }
