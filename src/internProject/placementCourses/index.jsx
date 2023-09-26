@@ -3,7 +3,7 @@ import { Header } from "./components/header";
 import { Courses } from "./components/courses";
 
 import { ContinueWithGoogle } from "./components/continueWithGoogle";
-import FooterPage from "./components/footer";
+import Footer from "../../common";
 
 const PlacmentCourcesPage = () => {
   return (
@@ -11,7 +11,8 @@ const PlacmentCourcesPage = () => {
       <Header />
       <Courses />
       <ContinueWithGoogle />
-      <FooterPage />
+      <Footer />
+      <App />
     </div>
   );
 };
