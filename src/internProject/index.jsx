@@ -19,13 +19,10 @@ export default function Index() {
     <div className="">
       <NavbarIndex />
       <NamePages />
-
       <DataboxIndex />
-
       <Link to="/prefrenceIndex">
         <PreferenceIndex />
       </Link>
-
       <Link to="databox">
         <CertificateIndex />
       </Link>

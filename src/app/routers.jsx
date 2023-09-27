@@ -16,7 +16,7 @@ export default function AppRoutes() {
       <Routes>
         <Route path="/" element={<UserIndex />}></Route>
         <Route path="/" element={<RegisterPage />}></Route>
-        <Route path="homePage" element={<Index />}></Route>
+        <Route path="/homePage" element={<Index />}></Route>
         <Route path="NavbarPage" element={<NavbarIndex />}></Route>
         <Route path="detail" element={<DetailsPage />}></Route>
         <Route path="databox" element={<PreferenceIndex />} />
