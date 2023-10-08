@@ -9,21 +9,24 @@ import UserIndex from "../internProject/userPage";
 import NavbarIndex from "../internProject/navbarPage";
 import RegisterPage from "../internProject/userPage/component/registerForm";
 import userMessage from "../internProject/message/component/userMessage";
+import PrivateComponent from "../internProject/userPage/privateComp";
 
 export default function AppRoutes() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<UserIndex />}></Route>
-        <Route path="/" element={<RegisterPage />}></Route>
-        <Route path="/homePage" element={<Index />}></Route>
-        <Route path="NavbarPage" element={<NavbarIndex />}></Route>
-        <Route path="detail" element={<DetailsPage />}></Route>
-        <Route path="databox" element={<PreferenceIndex />} />
-        <Route path="NamePage" element={<NamePages />} />
-        <Route path="prefrenceIndex" element={<PreferenceIndex />}></Route>
-        <Route path="CertificateIndex" element={<CertificateIndex />} />
-        <Route path="userMessage" element={<userMessage />}></Route>
+        <Route path="/login" element={<UserIndex />}></Route>
+        <Route path="/register" element={<RegisterPage />}></Route>
+        <Route element={<PrivateComponent />}>
+          <Route path="/" element={<Index />}></Route>
+          <Route path="NavbarPage" element={<NavbarIndex />}></Route>
+          <Route path="detail" element={<DetailsPage />}></Route>
+          <Route path="databox" element={<PreferenceIndex />} />
+          <Route path="NamePage" element={<NamePages />} />
+          <Route path="prefrenceIndex" element={<PreferenceIndex />}></Route>
+          <Route path="CertificateIndex" element={<CertificateIndex />} />
+          <Route path="userMessage" element={<userMessage />}></Route>
+        </Route>
       </Routes>
     </>
   );

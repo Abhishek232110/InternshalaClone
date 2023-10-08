@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 
 import CertificateIndex from "./certificat";
 import NavbarIndex from "./navbarPage";
+import { FormPage } from "./userPage/component/form";
 
 export default function Index() {
   const [open, setOpen] = useState(false);
@@ -27,6 +28,7 @@ export default function Index() {
         <CertificateIndex />
       </Link>
       <PlacmentCoursePage />
+      <FormPage />
     </div>
   );
 }

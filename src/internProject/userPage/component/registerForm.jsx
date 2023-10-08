@@ -1,25 +1,32 @@
-import axios from "axios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 export default function RegisterPage({ onClickLogin, onClickRegister }) {
-  const [form, setForm] = useState();
   const [name, setName] = useState();
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
   const navigate = useNavigate();
 
-  const submitHandle = (e) => {
-    e.preventDefault();
+  useEffect(() => {
+    let user = localStorage.getItem("user");
+    if (user) {
+      navigate("/");
+    }
+  }, []);
+
+  const submitDetails = async (e) => {
     onClickRegister(e);
-    axios
-      .post("http://localhost:4001/register", { name, email, password })
-      .then((result) => {
-        console.log(result);
-        navigate("/homePage");
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    const result = await fetch("http://localhost:9090/register", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, email, password }),
+    });
+    let data = await result.json();
+
+    {
+      data.name
+        ? localStorage.setItem("user", JSON.stringify(data))
+        : alert("user not save");
+    }
   };
 
   return (
@@ -28,7 +35,7 @@ export default function RegisterPage({ onClickLogin, onClickRegister }) {
         <h1 className="text-2xl font-medium text-center py-10 text-violet-500 ">
           <span>SignUp Here </span>
         </h1>
-        <form className="space-y-7" onSubmit={submitHandle}>
+        <form className="space-y-7" onSubmit={(e) => e.preventDefault()}>
           <div>
             <label className="block text-sm font-medium leading-6 text-gray-900">
               Name
@@ -66,9 +73,7 @@ export default function RegisterPage({ onClickLogin, onClickRegister }) {
             </div>
             <div className="mt-2">
               <input
-                onChange={(e) => {
-                  setPassword(e.target.value);
-                }}
+                onChange={(e) => setPassword(e.target.value)}
                 name="password"
                 type="password"
                 // autoComplete="current-password"
@@ -79,8 +84,7 @@ export default function RegisterPage({ onClickLogin, onClickRegister }) {
           </div>
           <div>
             <button
-              onSubmit={() => {}}
-              type="submit"
+              onClick={submitDetails}
               className=" p-1  rounded-md w-full bg-violet-400 hover:bg-violet-500"
             >
               submit
@@ -93,7 +97,7 @@ export default function RegisterPage({ onClickLogin, onClickRegister }) {
             className="font-semibold leading-6 text-violet-400 hover:text-violet-500 pl-2"
             onClick={onClickLogin}
           >
-            SignUp
+            SignIn
           </button>
         </p>
         {/* <button onClick={() => dispatch(getAllUser())}>AllUser</button> */}

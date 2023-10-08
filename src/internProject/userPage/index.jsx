@@ -21,7 +21,7 @@ export default function UserIndex() {
               }}
               onClickRegister={(e) => {
                 dispatch(sendAllUser(e)).then(() => {
-                  // negative("/homePage");
+                  negative("/");
                 });
               }}
             />
@@ -29,7 +29,7 @@ export default function UserIndex() {
             <UserLogin
               onClickLogin={(e) => {
                 dispatch(getAllUser(e)).then(() => {
-                  // negative("/homePage");
+                  negative("/");
                 });
               }}
               onClickRegister={() => {

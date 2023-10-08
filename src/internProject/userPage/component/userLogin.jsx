@@ -9,22 +9,30 @@ export default function UserLogin({ onClickRegister, onClickLogin }) {
   const [password, setPassword] = useState();
   const navigate = useNavigate();
   const select = useSelector((state) => state.app.users);
-
   const dispatch = useDispatch();
+  useEffect(() => {
+    let user = localStorage.getItem("user");
+    if (user) {
+      navigate("/");
+    }
+  }, []);
+
   const submitHandle = async (e) => {
     e.preventDefault();
     onClickLogin(e);
-    axios
-      .post("http://localhost:4001/login", { email, password })
-      .then((result) => {
-        console.log(result);
-        if (result.data == "success") {
-          navigate("/homePage");
-        }
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    const result = await fetch("http://localhost:9090/login", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email, password }),
+    });
+    let data = await result.json();
+    console.log(JSON.stringify(data));
+
+    {
+      data.name
+        ? localStorage.setItem("user", JSON.stringify(data))
+        : alert("user not found");
+    }
   };
 
   useEffect(() => {
